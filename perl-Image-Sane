@@ -33,15 +33,6 @@ BuildRequires:  perl(File::Spec)
 BuildRequires:  perl(Test::More)
 BuildRequires:  perl(Test::Requires)
 BuildRequires:  perl(Try::Tiny)
-%if %{with perl_Image_Sane_enables_optional_test}
-# Optional tests:
-# ImageMagick for identify tool
-BuildRequires:  ImageMagick
-# Test::Perl::Critic not used
-BuildRequires:  perl(Test::Pod) >= 1.00
-# sane-backensds for scanimage tool
-BuildRequires:  sane-backends
-%endif
 
 %description
 These Perl bindings for the SANE (Scanner Access Now Easy) Project allow
