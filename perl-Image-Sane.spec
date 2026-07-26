@@ -1,14 +1,12 @@
 %define upstream_name Image-Sane
-%define upstream_version 0.14
-
 Name:           perl-%{upstream_name}
-Version:        %perl_convert_version %{upstream_version}
-Release:        2
+Version:        0.14
+Release:        3
 Summary:        Perl extension for the SANE (Scanner Access Now Easy) Project
 License:        GPL+ or Artistic
 Group:          Development/Perl
-URL:            https://search.cpan.org/dist/%{upstream_name}/
-Source0:        http://www.cpan.org/authors/id/R/RA/RATCLIFFE/%{upstream_name}-%{upstream_version}.tar.gz
+URL:            https://metacpan.org/dist/%{upstream_name}/
+Source0:        http://www.cpan.org/authors/id/R/RA/RATCLIFFE/%{upstream_name}-%{version}.tar.gz
 BuildRequires:  coreutils
 BuildRequires:  findutils
 BuildRequires:  gcc
@@ -41,7 +39,7 @@ way, freeing you from the casting and memory management in C, yet remaining
 very close in spirit to original API.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 chmod -x examples/*
 
 %build
