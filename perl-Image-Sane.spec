@@ -1,7 +1,7 @@
 %define upstream_name Image-Sane
 Name:           perl-%{upstream_name}
-Version:        0.14
-Release:        3
+Version:        5.0.0
+Release:        1
 Summary:        Perl extension for the SANE (Scanner Access Now Easy) Project
 License:        GPL+ or Artistic
 Group:          Development/Perl
@@ -39,7 +39,7 @@ way, freeing you from the casting and memory management in C, yet remaining
 very close in spirit to original API.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n Image-Sane-5
 chmod -x examples/*
 
 %build
